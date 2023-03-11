@@ -54,12 +54,20 @@
 }
 
 .thing-add{
-  background: lightgray;
+  /* background: lightgray; */
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: none;
 }
+
+.thing-add:link {color:#FF0000;}    /* unvisited link, same as regular 'a' */
+.thing-add:hover {color:#FF00FF;}   /* mouse over link */
+.thing-add:focus {color:#0000FF;}   /* link has focus */
+.thing-add:active {color:#0000FF;}  /* selected link */
+.thing-add:visited {color:#00FF00;}
+
 
 
 .add-thing-img{
@@ -108,12 +116,6 @@
   justify-content: space-between;
 }
 
-.delete__form__options__btn{
-  padding: 5px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
 
 
 .delete__form__options__btn:nth-child(1){

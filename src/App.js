@@ -4,7 +4,7 @@ import '../src/styles/App.css'
 import ThingsList from './components/ThingsList';
 
 function App() {
-  const [modalActive, setModalActive] = useState(false);
+  const [modalActive, setModalActive] = useState();
   const [things, setThings] = useState([
     {id:1, date: new Date(2023, 1, 17, 3, 24, 0), title:'Social Media', body:'-Plan social content \n-Build content calendar \n-Plan promotion and distribution', color: 'rgb(253 244 180)'},
     {id:2, date: new Date(2023, 1, 19, 5, 22, 15), title:'Content Strategy', body:'Would need time ti get insights (goals, personals, budget, audits), but after, it would be good to focus on assembling my team. Also need to brainstorm on tooling.', color:'rgb(209 234 237)'},
